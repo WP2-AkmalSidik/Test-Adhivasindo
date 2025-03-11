@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ArticleController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\UserController;
 use Illuminate\Support\Facades\Route;
@@ -14,4 +15,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/user', [UserController::class, 'update']);
     Route::delete('/user', [UserController::class, 'destroy']);
 
+    Route::apiResource('articles', ArticleController::class);
 });
