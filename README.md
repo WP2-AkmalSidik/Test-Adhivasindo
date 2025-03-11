@@ -21,6 +21,35 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Panduan Commit
+
+Gunakan format commit berikut untuk memastikan keterbacaan dan konsistensi:
+
+### Format Commit
+```
+<type>(<scope>): <message>
+```
+
+### Jenis Commit
+1. **feat**: Menambahkan fitur baru
+2. **fix**: Memperbaiki bug
+3. **docs**: Memperbarui dokumentasi
+4. **style**: Memperbaiki format atau gaya kode (tanpa mengubah logika)
+5. **refactor**: Merombak kode tanpa mengubah fungsionalitas
+6. **test**: Menambahkan atau memperbaiki unit test
+7. **chore**: Perubahan yang tidak mempengaruhi kode sumber atau test (misalnya build process)
+
+### Contoh Commit
+- `feat(auth): Menambahkan fitur login dengan JWT`
+- `fix(api): Memperbaiki response status pada endpoint /users`
+- `docs(readme): Menambahkan panduan instalasi`
+- `style(button): Menyesuaikan warna tombol agar lebih kontras`
+- `refactor(database): Mengoptimalkan query untuk meningkatkan performa`
+- `test(user): Menambahkan unit test untuk fungsi register`
+- `chore(deps): Memperbarui dependensi ke versi terbaru`
+
+---
+
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
